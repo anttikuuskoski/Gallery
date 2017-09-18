@@ -759,6 +759,8 @@
           this.translateY(index, 0, speed)
         }
       }
+      // Clear the delta after touch so followup onclick events will work 
+      delete this.touchDelta
     },
 
     ontouchcancel: function (event) {
