@@ -508,7 +508,9 @@
     },
 
     translateY: function (index, y, speed) {
-      this.translate(index, 0, y, speed)
+      //This only creates purposeless (and annoying) up-down mini-drags    
+      //this.translate(index, 0, y, speed)
+      return;
     },
 
     animate: function (from, to, speed) {
